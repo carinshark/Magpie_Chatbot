@@ -97,7 +97,7 @@ public class Magpie{
     +"fourty fifth president:Donald Trump;"
     +"fourty sixth president:Joe Biden;"    
     ;
-    public static String greetings = "how are you:I am amazing, how are you?;"+
+    String greetings = "how are you:I am amazing, how are you?;"+
     "who are you:I am a chatbot programed by fortnite CEO epic games tim sweeney;"+
     "why were you created:I was created for a AP CSA project.;"+
     "when is your birthday:My birthday is the 21st of October.;"+
@@ -121,7 +121,7 @@ public class Magpie{
     ":;"+
     ":;"+
     ":;"+
-    ":;"+;
+    ":;";
 
         boolean botActive = true;
 
