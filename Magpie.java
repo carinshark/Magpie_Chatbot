@@ -133,8 +133,14 @@ public class Magpie{
             question = scan.nextLine();
 
             //remove punchuation
-            
 
+            question = (question.contains("."))?question.substring(0,question.indexOf(".")):question;
+            question = (question.contains("!"))?question.substring(0,question.indexOf("!")):question;
+            question = (question.contains("?"))?question.substring(0,question.indexOf("?")):question;
+            question = (question.contains("/"))?question.substring(0,question.indexOf("/")):question;
+            question = (question.contains("'"))?question.substring(0,question.indexOf("'")):question;
+
+            
             if (question.equals("end")){
                 botActive = false;
             }
@@ -152,7 +158,7 @@ public class Magpie{
 
     public static String getAnswer(String question,String whoData){
         String answer;
- 
+        
         if (whoData.contains(question.toLowerCase())) {
             
             int questionStart = whoData.indexOf(question.toLowerCase());
