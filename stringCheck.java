@@ -1,4 +1,4 @@
-public class MyThirdProgram{
+public class stringCheck{
     public static String whoData = "1st president:george washington;2nd president:John Adams;"
     +"3rd president:Thomas Jefferson;"
     +"4th president:James Madison;"
@@ -76,6 +76,6 @@ public class MyThirdProgram{
 
         }
 
-        return "";
+        return answer;
     }
 }

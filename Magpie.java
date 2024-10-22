@@ -105,7 +105,7 @@ public class Magpie{
     "heya:hiya!;"+
     "hey:hi;"+
     "how r u:good good good!;"+
-    "good:great! so would you like to ask me a question about who I am,  ;"+
+    "good:great! so would you like to ask me a question about who I am, the order of presidents (who is the 1st president?, second president?) ;"+
     ":;"+
     ":;"+
     ":;"+
@@ -149,11 +149,12 @@ public class Magpie{
             System.out.println("the "+question+" is "+getAnswer(question,people));
             }
             else{
-                System.out.println("Your question is beyond my comprehension "+pickExpression());
-            }
+                System.out.println(getAnswer(question,greetings));            }
 
 
         }
+
+        scan.close();
     }
 
     public static String getAnswer(String question,String whoData){
