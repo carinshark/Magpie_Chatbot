@@ -124,6 +124,7 @@ public class Magpie{
     ":;"+
     ":;"+
     ":;";
+    //need to fill out this portion of the code
 
         boolean botActive = true;
 
@@ -154,7 +155,7 @@ public class Magpie{
                 System.out.println("You now have"+gambaNum+"dollars!!");
 
 
-
+// need to add more gambling and add a few bug fixes as of friday the 25th
             }
             else if(question.contains("who is the")){
             question = question.substring(question.indexOf("the ")+4);
