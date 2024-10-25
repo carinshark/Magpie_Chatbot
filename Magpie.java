@@ -1,11 +1,12 @@
-
 import java.util.Scanner;
 
 public class Magpie{
     
-    
-    public static void main(String[] args) {
-        // datasets
+       public static void main(String[] args) {
+      
+        System.out.println(
+            "Welcome kind soul! I am magpie chatbot. I can answer a few questions about presidents and some questions about myself. Please start asking questions!!");
+      // datasets
     String people = "1st president:George Washington;2nd president:John Adams;"
     +"3rd president:Thomas Jefferson;"
     +"4th president:James Madison;"
@@ -95,7 +96,9 @@ public class Magpie{
     +"fourty third president:George W. Bush;"
     +"fourty fourth president:Barak Obama;"
     +"fourty fifth president:Donald Trump;"
-    +"fourty sixth president:Joe Biden;"    
+    +"fourty sixth president:Joe Biden;"  + 
+    "who is the best president:definitely not george bush. I really hate that guy. ;"+
+    "who is your favorite president:nixon;"
     ;
     String greetings = "how are you:I am amazing, how are you?;"+
     "who are you:I am a chatbot programed by fortnite CEO epic games tim sweeney;"+
@@ -106,10 +109,9 @@ public class Magpie{
     "hey:hi;"+
     "how r u:good good good!;"+
     "good:great! so would you like to ask me a question about who I am, the order of presidents (who is the 1st president?, second president?) ;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;"+
+
+    "favorite president:bush sr! i love that guy!;"+
+    "help:Hi! you can ask questions in the who is the ---- president format, or ask specific personal questions to me! sorry!;"+
     ":;"+
     ":;"+
     ":;"+
@@ -131,6 +133,7 @@ public class Magpie{
 
         while (botActive){
             question = scan.nextLine();
+            double gambaNum = 1;
 
             //remove punchuation
 
@@ -141,8 +144,17 @@ public class Magpie{
             question = (question.contains("'"))?question.substring(0,question.indexOf("'")):question;
 
             
-            if (question.equals("end")){
+            if (question.equals("end")||question.equals("break")){
                 botActive = false;
+                
+            }
+            else if (question.contains("gamba")){
+                gambaNum = gambaNum+(Math.random()*4-2);
+                
+                System.out.println("You now have"+gambaNum+"dollars!!");
+
+
+
             }
             else if(question.contains("who is the")){
             question = question.substring(question.indexOf("the ")+4);
@@ -200,6 +212,7 @@ public class Magpie{
                 return ":}";
         }
         return ":O";
+        
     }
     
 }
