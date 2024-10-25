@@ -149,7 +149,8 @@ public class Magpie{
             System.out.println("the "+question+" is "+getAnswer(question,people));
             }
             else{
-                System.out.println(getAnswer(question,greetings));            }
+                System.out.println(getAnswer(question,greetings));          
+            }
 
 
         }
@@ -160,7 +161,7 @@ public class Magpie{
     public static String getAnswer(String question,String whoData){
         String answer;
         
-        if (whoData.contains(question.toLowerCase())) {
+        if (whoData.contains(question.toLowerCase()+":")) {
             
             int questionStart = whoData.indexOf(question.toLowerCase());
 
