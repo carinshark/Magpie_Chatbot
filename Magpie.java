@@ -146,7 +146,11 @@ public class Magpie{
             }
             else if(question.contains("who is the")){
             question = question.substring(question.indexOf("the ")+4);
-            System.out.println("the "+question+" is "+getAnswer(question,people));
+            String response = getAnswer(question,people);
+            if (response.contains("beyond my")){
+                response = "something I know not of";
+            }
+            System.out.println("the "+question+" is "+response);
             }
             else{
                 System.out.println(getAnswer(question,greetings));          
@@ -163,7 +167,7 @@ public class Magpie{
         
         if (whoData.contains(question.toLowerCase()+":")) {
             
-            int questionStart = whoData.indexOf(question.toLowerCase());
+            int questionStart = whoData.indexOf(question.toLowerCase()+":");
 
             String data = whoData.substring(questionStart);
             int answerStart = data.indexOf(":");
