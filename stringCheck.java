@@ -48,9 +48,6 @@ public class stringCheck{
 
     public static void main(String[] args) {
         
-        getAnswer("1st president");
-        getAnswer("2nd president");
-        
 
 
 
