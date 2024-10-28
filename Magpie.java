@@ -7,7 +7,7 @@ public class Magpie{
         System.out.println(
             "Welcome kind soul! I am magpie chatbot. I can answer a few questions about presidents and some questions about myself. Please start asking questions!!");
       // datasets
-    String people = "1st president:George Washington;2nd president:John Adams;"
+    String people = ";1st president:George Washington;2nd president:John Adams;"
     +"3rd president:Thomas Jefferson;"
     +"4th president:James Madison;"
     +"5th president:James Monroe;"
@@ -100,7 +100,7 @@ public class Magpie{
     "best president:definitely not george bush. I really hate that guy. ;"+
     "favorite president:nixon;"
     ;
-    String greetings = "how are you:I am amazing, how are you?;"+
+    String greetings = ";how are you:I am amazing, how are you?;"+
     "who are you:I am a chatbot programed by fortnite CEO epic games tim sweeney;"+
     "why were you created:I was created for a AP CSA project.;"+
     "when is your birthday:My birthday is the 21st of October.;"+
@@ -196,9 +196,9 @@ public class Magpie{
     public static String getAnswer(String question,String whoData){
         String answer;
         
-        if (whoData.contains(question.toLowerCase()+":")) {
+        if (whoData.contains(";"+question.toLowerCase()+":")) {
             
-            int questionStart = whoData.indexOf(question.toLowerCase()+":");
+            int questionStart = whoData.indexOf(";"+question.toLowerCase()+":")+1;
 
             String data = whoData.substring(questionStart);
             int answerStart = data.indexOf(":");
