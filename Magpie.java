@@ -145,10 +145,12 @@ public class Magpie{
             question = (question.contains("'"))?question.substring(0,question.indexOf("'")):question;
 
             
+            //end program
             if (question.equals("end")||question.equals("break")){
                 botActive = false;
                 
             }
+            //gambling system
             else if (question.contains("gamba")){
                 gambaNum = gambaNum+(Math.random()*4-2);
                 
@@ -158,6 +160,8 @@ public class Magpie{
             
 
 // need to add more gambling and add a few bug fixes as of friday the 25th
+
+
             }
             else if (question.contains("cash=")){
                 question = question.substring(question.indexOf("="));
@@ -168,7 +172,7 @@ public class Magpie{
                 System.out.println("president lincoln is the tallest president.  ");
 
             }
-            else if(question.contains("who is the")){
+            else if(question.contains("who is the")||question.contains("who was the")){
 
             question = question.substring(question.indexOf("the ")+4);
 
