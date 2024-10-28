@@ -98,7 +98,10 @@ public class Magpie{
     +"fourty fifth president:Donald Trump;"
     +"fourty sixth president:Joe Biden;"  + 
     "best president:definitely not george bush. I really hate that guy. ;"+
-    "favorite president:nixon;"
+    "favorite president:nixon;"+
+    "president:Joe Biden;"+
+    "magpie:chatbot;"+
+    "chatbot:magpie;"
     ;
     String greetings = ";how are you:I am amazing, how are you?;"+
     "who are you:I am a chatbot programed by fortnite CEO epic games tim sweeney;"+
@@ -112,10 +115,10 @@ public class Magpie{
 
     "favorite president:bush sr! i love that guy!;"+
     "help:Hi! you can ask questions in the who is the ---- president format, or ask specific personal questions to me! sorry!;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;"+
+    "hi:howdy;"+
+    "meep:morp;"+
+    "nuh uh:yuh uh;"+
+    "what is your purpose:to answer questions...about presidents...;"+
     ":;"+
     ":;"+
     ":;"+
