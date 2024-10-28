@@ -97,8 +97,8 @@ public class Magpie{
     +"fourty fourth president:Barak Obama;"
     +"fourty fifth president:Donald Trump;"
     +"fourty sixth president:Joe Biden;"  + 
-    "who is the best president:definitely not george bush. I really hate that guy. ;"+
-    "who is your favorite president:nixon;"
+    "best president:definitely not george bush. I really hate that guy. ;"+
+    "favorite president:nixon;"
     ;
     String greetings = "how are you:I am amazing, how are you?;"+
     "who are you:I am a chatbot programed by fortnite CEO epic games tim sweeney;"+
@@ -168,7 +168,7 @@ public class Magpie{
                 System.out.println("president lincoln is the tallest president.  ");
 
             }
-            else if(question.contains("who is the")||question.contains("president")){
+            else if(question.contains("who is the")){
 
             question = question.substring(question.indexOf("the ")+4);
 
