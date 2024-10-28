@@ -174,13 +174,14 @@ public class Magpie{
             }
             else if(question.contains("who is the")||question.contains("who was the")){
 
-            question = question.substring(question.indexOf("the ")+4);
+                question = question.substring(question.indexOf("the ")+4);
 
-            String response = getAnswer(question,people);
-            if (response.contains("beyond my")){
-                response = "something I know not of";
-            }
-            System.out.println("the "+question+" is "+response);
+                String response = getAnswer(question,people);
+
+                if (response.contains("beyond my")){
+                    response = "something I know not of";
+                }
+                System.out.println("the "+question+" is "+response);
             }
             else{
                 System.out.println(getAnswer(question,greetings));          
