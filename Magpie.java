@@ -153,12 +153,25 @@ public class Magpie{
                 gambaNum = gambaNum+(Math.random()*4-2);
                 
                 System.out.println("You now have"+gambaNum+"dollars!!");
-
+                System.out.println("if you would like to gamble again, type 'gamba'");
+                System.out.println("if you need to reset your money amount type: cash=(whatever amount you want)");
+            
 
 // need to add more gambling and add a few bug fixes as of friday the 25th
             }
-            else if(question.contains("who is the")){
+            else if (question.contains("cash=")){
+                question = question.substring(question.indexOf("="));
+                System.out.println("Your new cash value is"+question);
+
+            }
+            else if (question.contains("tall")){
+                System.out.println("president lincoln is the tallest president.  ");
+
+            }
+            else if(question.contains("who is the")||question.contains("president")){
+
             question = question.substring(question.indexOf("the ")+4);
+
             String response = getAnswer(question,people);
             if (response.contains("beyond my")){
                 response = "something I know not of";
