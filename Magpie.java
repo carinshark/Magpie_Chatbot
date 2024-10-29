@@ -4,7 +4,7 @@ public class Magpie{
     public static String oneToTen(int i, String question) {
         String finalQuestion = "";
 
-        for (int b = 0; b < 5; b++){
+        for (int b = 0; b <= 9; b++){
             if (question.substring(i,i+2).equals(("")+(b))){
                 finalQuestion = (i + b+"");
             }
@@ -15,7 +15,7 @@ public class Magpie{
             return finalQuestion;
 
         }
-    public static String checkForNewFile(String question){
+    public static String getNumber(String question){
         String inputString ="";
         if (question.contains("pr")&& 
         (question.contains("1")
@@ -28,8 +28,9 @@ public class Magpie{
         ||question.contains("8")
         ||question.contains("9"))){
            boolean dave = true;
+           int i = -1;
                while(dave){
-                   int i = -1;
+                   
                    i++;
                    if (question.substring(i,i+1).equals("1")){
                         inputString = oneToTen(i,question);
@@ -71,7 +72,7 @@ public class Magpie{
 
                    }
 
-                   else if(i >=30){
+                    if(i > question.length()){
                     inputString = question;
                        dave = false;
 
@@ -213,9 +214,11 @@ public class Magpie{
         Scanner scan = new Scanner(System.in);
 
         String question;
+        
 
         while (botActive){
             question = scan.nextLine();
+            System.out.println(getNumber(question));
             
             double gambaNum = 1;
 
