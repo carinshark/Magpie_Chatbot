@@ -1,7 +1,86 @@
 import java.util.Scanner;
 
 public class Magpie{
-    
+    public static String oneToTen(int i, String question) {
+        String finalQuestion = "";
+
+        for (int b = 0; b < 5; b++){
+            if (question.substring(i,i+2).equals(("")+(b))){
+                finalQuestion = (i + b+"");
+            }
+            else 
+            finalQuestion = (i+"");
+
+            }
+            return finalQuestion;
+
+        }
+    public static String checkForNewFile(String question){
+        String inputString ="";
+        if (question.contains("pr")&& 
+        (question.contains("1")
+        ||question.contains("2")
+        ||question.contains("3")
+        ||question.contains("4")
+        ||question.contains("5")
+        ||question.contains("6")
+        ||question.contains("7")
+        ||question.contains("8")
+        ||question.contains("9"))){
+           boolean dave = true;
+               while(dave){
+                   int i = -1;
+                   i++;
+                   if (question.substring(i,i+1).equals("1")){
+                        inputString = oneToTen(i,question);
+                   }
+                   else if(question.substring(i,i+1).equals("2")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("3")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("4")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("5")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("6")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("7")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("8")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("9")){
+                        inputString = oneToTen(i,question);
+
+                   }
+                   else if(question.substring(i,i+1).equals("0")){
+                        inputString = oneToTen(i,question);
+
+                   }
+
+                   else if(i >=30){
+                    inputString = question;
+                       dave = false;
+
+                   }
+                   //shouldve used a for loop but if it works im not changing it..
+               }
+       }
+       return inputString;
+    }
        public static void main(String[] args) {
       
         System.out.println(
@@ -137,6 +216,7 @@ public class Magpie{
 
         while (botActive){
             question = scan.nextLine();
+            
             double gambaNum = 1;
 
             //remove punchuation
