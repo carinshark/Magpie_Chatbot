@@ -185,6 +185,19 @@ public class Magpie{
                     response = "something I know not of";
                 }
                 System.out.println("the "+question+" is "+response);
+
+            } else if(question.contains("guess a number between ")){
+
+                question = question.substring(question.indexOf("between ")+8);
+
+                int num1 = Integer.valueOf(question.substring(0,question.indexOf(" and")));
+
+                int num2 = Integer.valueOf(question.substring(question.indexOf("and ")+4));
+             
+
+                System.out.println((int)(Math.random()*(num2-num1)+num1));
+
+
             }
             else{
                 System.out.println(getAnswer(question,greetings));          
