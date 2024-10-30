@@ -198,15 +198,7 @@ public class Magpie{
     "hi:howdy;"+
     "meep:morp;"+
     "nuh uh:yuh uh;"+
-    "what is your purpose:to answer questions...about presidents...;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;"+
-    ":;";
+    "what is your purpose:to answer questions...about presidents...;";
     //need to fill out this portion of the code
 
         boolean botActive = true;
