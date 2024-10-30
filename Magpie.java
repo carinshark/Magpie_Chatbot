@@ -218,7 +218,7 @@ public class Magpie{
 
         while (botActive){
             question = scan.nextLine();
-            System.out.println(getNumber(question));
+            // System.out.println(getNumber(question));  -  for testing purposes, disabled for now
             
             double gambaNum = 1;
 
